@@ -1,5 +1,9 @@
+// Le preguntamos al posible cliente y le damos la bienvenida 
+
 let nombre = (prompt("Cómo te llamas?"));
 alert(`Bienvenido ${nombre}, éstos son nuestros productos destacados!`)
+
+// Las variasbles que voy a utilizar
 
 let producto1 = "Remera Nike $";
 let producto2 = "Remera Adidas $";
@@ -15,8 +19,14 @@ let precio4 = 3000;
 let precio5 = 6000;
 let precio6 = 4000;
 
+// Con un alert le mostramos en una lista los productos que tenemos disponible al cliente 
 
 alert(`Productos:\n ${producto1} ${precio1}\n ${producto2} ${precio2}\n ${producto3} ${precio3}\n ${producto4} ${precio4}\n ${producto5} ${precio5}\n ${producto6} ${precio6}`);
+
+
+/* Le preguntamos al cliente cuanto presupuesto tiene 
+y con los ifs depende que presupuesto nos diga le daremos una sugerencia
+*/
 
 let dineroCliente = Number(prompt("Dinos tu presupuesto y haremos una sugerencia de lo que puedes comprar!"));
 
@@ -42,14 +52,16 @@ if (dineroCliente >= 1000 && dineroCliente < 1500){
     alert("Todo bien, pero solo pasaba a mirar...");
 }
 
+/*Luego le brindaremos la posibilidad de que ponga el precio de tales producto que quiera 
+y con una funcion calculadora, le otorgaremos el precio total de su compra
+*/ 
 
 let combinacion = prompt ("Si quieres hacer una combinación de productos pon: SI, si quieres o NO, si no") .toLowerCase();
 if (combinacion === "si"){
     alert("Qué combinacion quieres? En las siguientes dos alertas pon el monto del producto y estas te daran el total de tu compra");
 }else {
-    alert("ok")
+    alert("Ok, puede seguir mirando...");
 }
-
 
 function calculador (eleccion1, eleccion2){
     return eleccion1 + eleccion2;
